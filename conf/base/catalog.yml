@@ -1,0 +1,27 @@
+train_raw:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train.csv
+
+test_raw:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train.csv
+
+train_cleaned:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/titanic_cleaned.csv
+
+test_cleaned:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/titanic_cleaned.csv
+
+train_proc:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/titanic_processed.csv
+
+test_proc:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/titanic_test_processed.csv
+
+model:
+  type: pickle.PickleDataSet
+  filepath: data/06_models/model.pkl
